@@ -1,23 +1,46 @@
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif; */
 * {
   margin: 0;
   padding: 0;
 }
-main {
-  width: 100vw;
+body {
+  width: 100%;
   height: 100vh;
   background-color: hsl(257, 40%, 49%);
   background-image: url(../images/bg-mobile.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   font-family: "Open Sans", sans-serif;
   color: white;
 }
-
+.wrapper {
+  width: 304px;
+  margin: 0 auto;
+}
+.logo img {
+  width: 120px;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+}
+.mockup img {
+  width: 296px;
+  margin-bottom: 3vh;
+  margin-left: 2px;
+}
 h1 {
   font-family: "Poppins", sans-serif;
+  line-height: 36px;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 16px;
 }
-div a {
+div p {
+  line-height: 26px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 5vh;
+}
+
+div > a {
   display: inline-block;
   width: 200px;
   height: 40px;
@@ -29,27 +52,49 @@ div a {
   text-align: center;
   line-height: 40px;
   font-size: 12px;
+  margin-left: 52px;
+  margin-bottom: 5vh;
+}
+section {
+  margin-left: 90px;
 }
 section a {
   display: inline-block;
   width: 28px;
   height: 28px;
-  padding: 20px;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 50%;
-  margin: 10px;
+  margin-right: 9px;
+  margin-bottom: 5vh;
 }
-section a i {
-  font-size: 30px;
+section a img {
+  height: 14px;
+}
+section a:nth-child(1) img {
+  transform: translate(110%, 25%);
+}
+section a:nth-child(2) img {
+  transform: translate(55%, 30%);
+}
+section a:nth-child(3) img {
+  transform: translate(60%, 30%);
+}
+footer {
+  position: relative;
+  font-size: 10px;
+  width: 100%;
+  bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  transform: translateY(-25%);
+}
+footer a {
+  text-decoration: none;
   color: white;
 }
-section a:first-child,
-section a:last-child {
-  text-align: center;
-}
-@media (min-width: 400px) {
+/* @media (min-width: 400px) {
   main {
     background-image: url(../images/bg-desktop.svg);
     background-size: cover;
   }
-}
+} */
