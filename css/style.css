@@ -27,17 +27,17 @@ body {
   margin-left: 2px;
 }
 h1 {
-  font-family: "Poppins", sans-serif;
-  line-height: 36px;
-  text-align: center;
-  font-size: 24px;
   margin-bottom: 16px;
+  line-height: 36px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  text-align: center;
 }
 div p {
-  line-height: 26px;
+  margin-bottom: 5vh;
   text-align: center;
   font-size: 16px;
-  margin-bottom: 5vh;
+  line-height: 26px;
 }
 
 div > a {
@@ -45,13 +45,13 @@ div > a {
   width: 200px;
   height: 40px;
   background-color: white;
-  border-radius: 20px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.281);
   color: hsl(257, 40%, 49%);
+  border-radius: 20px;
   text-decoration: none;
+  font-size: 12px;
   text-align: center;
   line-height: 40px;
-  font-size: 12px;
   margin-left: 52px;
   margin-bottom: 5vh;
 }
@@ -66,35 +66,123 @@ section a {
   border-radius: 50%;
   margin-right: 9px;
   margin-bottom: 5vh;
+  text-align: center;
 }
-section a img {
-  height: 14px;
-}
-section a:nth-child(1) img {
-  transform: translate(110%, 25%);
-}
-section a:nth-child(2) img {
-  transform: translate(55%, 30%);
-}
-section a:nth-child(3) img {
-  transform: translate(60%, 30%);
+.fa-facebook-f,
+.fa-instagram,
+.fa-twitter {
+  color: white;
+  font-size: 14px;
+  line-height: 28px;
 }
 footer {
   position: relative;
-  font-size: 10px;
   width: 100%;
   bottom: 20px;
-  padding-top: 20px;
+  font-size: 10px;
   text-align: center;
+  padding-top: 20px;
   transform: translateY(-25%);
 }
 footer a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
-/* @media (min-width: 400px) {
-  main {
+@media (min-width: 400px) {
+  body {
+    background-color: hsl(257, 40%, 49%);
     background-image: url(../images/bg-desktop.svg);
-    background-size: cover;
+    background-repeat: no-repeat;
   }
-} */
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .logo img {
+    width: 250px;
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+  }
+  .mockup img {
+    width: 60%;
+    margin-bottom: 3vh;
+    margin-left: 2px;
+  }
+  .texts {
+    position: absolute;
+    width: 35%;
+    right: 20px;
+    top: 25vh;
+  }
+  h1 {
+    line-height: 60px;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    text-align: left;
+    padding-right: 100px;
+    margin-bottom: 5vh;
+  }
+  div p {
+    margin-bottom: 7vh;
+    text-align: left;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  div > a {
+    width: 200px;
+    height: 56px;
+    border-radius: 40px;
+    font-size: 18px;
+    line-height: 56px;
+    margin-left: 0px;
+    margin-bottom: 5vh;
+  }
+  div > a:hover {
+    background-color: hsl(300, 69%, 71%);
+  }
+  section {
+    position: absolute;
+    top: 90vh;
+    right: 10vh;
+  }
+  section a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 11px;
+    margin-bottom: 5vh;
+    text-align: center;
+    color: white;
+  }
+  .fa-facebook-f,
+  .fa-instagram,
+  .fa-twitter {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  section a:hover {
+    border: 2px solid hsl(300, 69%, 71%);
+  }
+  section a:hover .fa-facebook-f,
+  section a:hover .fa-instagram,
+  section a:hover .fa-twitter {
+    color: hsl(300, 69%, 71%);
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    bottom: 20px;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 20px;
+    transform: translateY(-25%);
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+}
